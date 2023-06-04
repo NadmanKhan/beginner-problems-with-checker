@@ -4,11 +4,15 @@ Some beginner-level algorithmic problems designed at the behest of a professor a
 
 ## How to use
 
+Dependencies: Python 3, GCC
+
 1. Clone the repository or download the zip file and extract it.
 2. Go to the directory of the problem you want to solve, read the problem description in `description.pdf`, and write your solution wherever you want.
-3. Run the checker with `python3 checker.py <problem-id> <path-to-your-solution>`. For example, if you want to check your solution to problem `A` and your solution is in `~/Desktop/solution.cpp`, run `python3 checker.py A ~/Desktop/solution.cpp`. The checker will run your solution against all the tests and tell you if your solution is correct or not.
+3. Run the checker with `python checker.py <problem-id> <path-to-your-solution>`. For example, if you want to check your solution to problem `A` and your solution is in `c:\Users\John\Desktop\solution.cpp`, run `python checker.py A c:\Users\John\Desktop\solution.cpp`. If the GCC compiler is not in your PATH, you can specify the path to it in the third argument, e.g. `python checker.py A c:\MinGW\bin\g++.exe c:\Users\John\Desktop\solution.cpp`.
 
 ## How to add your own problems
+
+Dependencies: Python 3, Pandoc (optional)
 
 The `.judge` folder under each problem directory contains 4 files:
 
